@@ -1,0 +1,31 @@
+### Create user
+
+POST http://{{host}}/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "azerty"
+}
+
+### Get user by ID
+
+GET http://{{host}}/auth/1
+
+### Get users with query string
+
+GET http://{{host}}/auth?email=test@gmail.com
+
+### Update user by id
+
+PATCH http://{{host}}/auth/1
+Content-Type: application/json
+
+{
+    "email": "test@hotmail.fr"
+}
+
+### Delete user by id
+
+DELETE http://{{host}}/auth/1
+
