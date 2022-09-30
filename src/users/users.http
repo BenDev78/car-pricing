@@ -10,7 +10,7 @@ Content-Type: application/json
 
 ### Get user by ID
 
-GET http://{{host}}/auth/1
+GET http://{{host}}/auth/2
 
 ### Get users with query string
 
