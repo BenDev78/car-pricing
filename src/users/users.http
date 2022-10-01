@@ -4,9 +4,23 @@ POST http://{{host}}/auth/signup
 Content-Type: application/json
 
 {
-    "email": "test@gmail.com",
-    "password": "azerty"
+    "email": "benjamin.nosel@adriver.co",
+    "password": "Adriver@2022"
 }
+
+### singin User
+
+POST http://{{host}}/auth/signin
+Content-Type: application/json
+
+{
+    "email": "benjamin.nosel@adriver.co",
+    "password": "Adriver@2022"
+}
+
+### singout User
+
+POST http://{{host}}/auth/signout
 
 ### Get user by ID
 
@@ -29,3 +43,6 @@ Content-Type: application/json
 
 DELETE http://{{host}}/auth/1
 
+### Get current signed user
+
+GET http://{{host}}/auth/whoami
